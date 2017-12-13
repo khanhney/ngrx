@@ -1,0 +1,5 @@
+<h3 [style.color]="word.isMemorized ? 'green' : 'red'">{{word.en}}</h3>
+<p>{{word.vn}}</p>
+<button *ngIf="word.isMemorized" class="btn btn-danger" (click)="removeWord()">Remove</button>
+<button *ngIf="!word.isMemorized" class="btn btn-primary" (click)="removeWord()">Remove</button>
+<button class="btn btn-info" (click)="toogleWord()">Toogle Is Memorized</button>

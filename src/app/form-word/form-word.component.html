@@ -1,0 +1,9 @@
+<div class="col-sm-6">
+  <form (ngSubmit)="submitFormWord(fromWord);fromWord.reset()" #fromWord="ngForm">
+    <input type="text" class="form-control" placeholder="English" name="en" ngModel><br>
+    <input type="text" class="form-control" placeholder="VietNamese" name="vn" ngModel><br>
+    <button class="btn btn-success">Add Word</button>  
+    <br><br>
+    <code>{{fromWord.value | json}}</code>
+  </form>
+</div>

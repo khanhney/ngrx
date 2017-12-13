@@ -1,0 +1,1 @@
+# dùng ngrx tách word ra khỏi listWord
